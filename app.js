@@ -11,8 +11,6 @@ function adicionarAmigo() {
     let li = document.createElement('li');
     li.textContent = nome;
     listaAmigos.appendChild(li);
-    document.getElementById('amigo').value = ''; 
-    alert( lista_de_amigos)
-    
+    document.getElementById('amigo').value = '';     
 }
 
