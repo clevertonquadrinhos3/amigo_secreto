@@ -65,11 +65,14 @@ function Reiniciar() {
      
      let resultado = document.getElementById('resultado');
      let listaAmigosTela = document.getElementById('listaAmigos');
-     
+
      // Limpa o resultado do sorteio
      resultado.innerHTML = ''; 
      
      // remove da visualização todos os amigos inseridos
      listaAmigosTela.innerHTML = '';
+
+     // limpa a lista de amigos para sorteio
+     lista_de_amigos =[]
 }
 
