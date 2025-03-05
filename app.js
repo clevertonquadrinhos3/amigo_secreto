@@ -14,8 +14,7 @@ function adicionarAmigo() {
         
     }
 
-    
-    
+        
     // Regex para validar nomes (apenas letras e espaços, não aceita números ou caracteres especiaiss)
     let nomeValido = /^[a-zA-Z\s\u00C0-\u00FF]+$/.test(nome);
 
@@ -42,7 +41,7 @@ function sortearAmigo() {
     
     // Seleciona o elemento para exibir o resultado
     let resultado = document.getElementById('resultado'); 
-    let listaAmigosTela = document.getElementById('listaAmigos');
+    
         
     
     // Verifica se existe ao menos uma amigo na lista. Se não houver alerta ao usuário e retorna
@@ -58,7 +57,19 @@ function sortearAmigo() {
     // Atualiza o conteúdo do elemento com o amigo sorteado
     resultado.innerHTML = `<li>Amigo sorteado: ${amigoSorteado}</li>`; 
 
-    // remove da visualização todos os amigos inseridos
-    listaAmigosTela.innerHTML = '';
+   
+}
+
+function Reiniciar() {
+     
+     
+     let resultado = document.getElementById('resultado');
+     let listaAmigosTela = document.getElementById('listaAmigos');
+     
+     // Limpa o resultado do sorteio
+     resultado.innerHTML = ''; 
+     
+     // remove da visualização todos os amigos inseridos
+     listaAmigosTela.innerHTML = '';
 }
 
