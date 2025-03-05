@@ -30,7 +30,7 @@ function adicionarAmigo() {
         errorMessage.style.display = 'none';
         let li = document.createElement('li');
         li.textContent = nome;
-        listaAmigosTela.appendChild(li);
+        listaAmigosTela.appendChild(li);        
         lista_de_amigos.push(nome);
     }
     // Independente de ser válido ou não limpa o campo para incluir um novo nome
@@ -42,6 +42,8 @@ function sortearAmigo() {
     
     // Seleciona o elemento para exibir o resultado
     let resultado = document.getElementById('resultado'); 
+    let listaAmigosTela = document.getElementById('listaAmigos');
+        
     
     // Verifica se existe ao menos uma amigo na lista. Se não houver alerta ao usuário e retorna
     if (lista_de_amigos.length == 0) {
@@ -55,5 +57,8 @@ function sortearAmigo() {
 
     // Atualiza o conteúdo do elemento com o amigo sorteado
     resultado.innerHTML = `<li>Amigo sorteado: ${amigoSorteado}</li>`; 
+
+    // remove da visualização todos os amigos inseridos
+    listaAmigosTela.innerHTML = '';
 }
 
