@@ -29,7 +29,7 @@ Este é um projeto simples de uma página web para organizar um sorteio de amigo
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/clevertonquadrinhos3@gmail.com/amigo-secreto.git
+   git clone https://github.com/clevertonquadrinhos3@gmail.com/amigo_secreto.git
    
 2. Acesse a página: https://amigosecreto-roan-ten.vercel.app/
     
