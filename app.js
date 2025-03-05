@@ -6,6 +6,12 @@ function adicionarAmigo() {
     let nome = document.getElementById('amigo').value;
     let listaAmigos = document.getElementById('listaAmigos');
 
+    if(nome =" "){
+        alert('Adicione o nome de um amigo para sortear.');
+        return;
+        
+    }
+
     lista_de_amigos.push(nome);
 
     let li = document.createElement('li');
